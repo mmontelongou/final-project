@@ -1,0 +1,13 @@
+.app__order-online {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6em auto;
+}
+
+.app__order-online h1 {
+  color: #495E57;
+  text-align: center;
+  text-transform: uppercase;
+}

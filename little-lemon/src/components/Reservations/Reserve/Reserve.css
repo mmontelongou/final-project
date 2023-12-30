@@ -1,0 +1,27 @@
+.reserve__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 3em auto;
+}
+
+.reserve__buttons .btn-reserve {
+  padding: 10px 20px;
+  font-size: 1.4em;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.reserve__buttons .btn-reserve:hover {
+  background-color: #F4CE14;
+  cursor: pointer;
+}
+
+.reserve__buttons .btn-reserve:disabled {
+  color: #ffffff;
+  background-color: gray;
+  cursor: not-allowed;
+}

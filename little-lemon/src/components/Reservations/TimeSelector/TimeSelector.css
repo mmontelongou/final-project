@@ -1,0 +1,60 @@
+.reservation__time-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #EDEFEE;
+  background-color: #495E57;
+}
+
+.reservation__time-selector > div{
+  max-width: 30em;
+  width: 100%;
+  margin: 3em auto;
+}
+
+.reservation__time-selector > div > h1{
+  font-family: 'Karla', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.timeslots-capsules {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto 0;
+}
+
+.radio-lablel-box {
+  width: 110px;
+  padding: .5em;
+  font-size: 1.4em;
+  color: #495E57;
+  border-radius: 16px;
+  background-color: #EDEFEE;
+}
+.radio-btn-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input[type="radio"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 780px) {
+  .reservation__time-selector > div > h1{
+    text-align: center;
+  }
+  
+  .timeslots-capsules {
+    gap: 0.5rem;
+  }
+
+  .radio-lablel-box {
+    width: 100px;
+  }
+}

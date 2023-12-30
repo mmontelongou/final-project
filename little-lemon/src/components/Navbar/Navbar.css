@@ -1,0 +1,131 @@
+/* .app__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+} */
+  
+.app__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-family: 'Karla', serif;
+  background: rgba(210, 210, 210, 0.65);
+  backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 2;
+}
+  
+  
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+  
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 15px;
+  list-style-type: none;
+}
+  
+.link {
+  color: #495E57;
+  text-decoration: none;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #F4CE14;
+  text-shadow: 0px 0px 13px #000;
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDEFEE;
+}
+
+.app__navbar-hamburger {
+  width: 70%;
+  height: 70%;
+  color: #495E57;
+}
+  
+.app__navbar-menu > div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  padding: 1rem;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+}
+  
+.app__navbar-cancel {
+  width: 35px;
+  height: 35px;
+  color: #495E57;
+}
+
+.app__navbar-menu > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+/* .app__navbar-menu > div > .link {
+  font-size: 28px;
+} */
+  
+@media screen and (min-width: 900px) {
+  .app__navbar-menu {
+    display: none;
+  }
+
+  .app__navbar-menu > div {
+    display: none;
+  }
+}
+  
+@media screen and (max-width: 900px) {
+  .app__navbar-links {
+    display: none;
+  }
+}
+  
+@media screen and (min-width: 2000px) {
+  .p-text{
+    font-size: 1.75rem;
+  }
+}

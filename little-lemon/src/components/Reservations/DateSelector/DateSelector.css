@@ -1,0 +1,99 @@
+.reservation__date-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  background-color: #EDEFEE;
+}
+
+.reservation__date-selector-date-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 30em;
+  width: 100%;
+}
+
+.title {
+  color: #495E57;
+  font-family: 'Karla', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.date, .time {
+  color: #EDEFEE;
+  border: 1px solid #EDEFEE;
+  border-radius: 7px;
+  padding: 1em;
+  background-color: #495E57;
+}
+
+.open-closed {
+  width: 100%;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+.closed {
+  color: red;
+}
+
+.choose-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+}
+
+input[type="date"],
+.ocassion-selector {
+  width: 200px;
+  padding: 1em;
+  color: #ffffff;
+  font-size: 1.2em;
+  border: none;
+  background-color: #495E57;
+  border-radius: 5px;
+  outline: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='30' viewBox='0 0 24 24' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+}
+
+@media screen and (max-width: 780px) {
+  .reservation__date-selector {
+    font-size: 1em;
+  }
+
+  .choose-date {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

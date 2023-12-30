@@ -1,0 +1,119 @@
+.app__specials {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.app__specials-title-and-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.app__specials-btn-menu {
+  padding: 10px 20px;
+  font-size: 1.4em;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #F4CE14;
+}
+
+.app__specials-food-card-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__specials-food {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 25px;
+  padding: 15px;
+}
+
+.app__specials-item {
+  width: 264px;
+  border-radius: 16px;
+  border: 1px solid #e4e4e4;
+  background-color: #EDEFEE;
+}
+
+.app__specials-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.app_specials-name {
+  font-size: 1.4em;
+  padding-right: .5em;
+}
+
+.app_specials-price {
+  font-size: 1.2em;
+  color: #EE9972;
+}
+
+.app_specials-description {
+  height: 125px;
+  margin: 1em auto;
+  line-height: 1.2rem;
+  color: #495E57;
+  text-align: justify;
+}
+.app__spcecials-image {
+  width: 100%;
+  height: 182px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.app_specials-details {
+  padding: 2em;
+}
+
+.app__specials-order {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  padding: 10px;
+  color: #EDEFEE;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #495E57;
+  transition: .3s all;
+}
+
+.app__specials-order:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #F4CE14;
+}
+
+@media screen and (max-width:1020px) {
+  .app__specials-food {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .app__specials-food {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .app__specials-title {
+    font-size: 40px;
+  }
+
+  .app__specials-btn-menu {
+    font-size: 20px;
+  }
+}
